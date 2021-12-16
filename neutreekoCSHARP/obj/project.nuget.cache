@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "QrlbOXs5JXULAnC26JjFXl1EBf5ftXSAWo8xydBd8uPzG5AVm60On9MZUNJXLd8gHL3oKzpgrhidvIAfxlYu8w==",
+  "success": true,
+  "projectFilePath": "Y:\\stuff\\KPI\\АСД2\\laba5\\neutreekoCSHARP\\neutreekoCSHARP\\neutreekoCSHARP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IEnumerator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\IEnumerator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\IEnumerator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\IEnumerator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
