@@ -5,7 +5,7 @@ namespace neutreekoCSHARP
 {
     public class MinMax
 	{
-		public AIGame game_;
+		public Game game_;
 		public AI ai_;
 		public int score_;
 		public int nOpenings_;
@@ -41,10 +41,10 @@ namespace neutreekoCSHARP
 
 		private class StrategyForMax : MinMaxStrategy
 		{
-            private readonly AIGame game_;
+            private readonly Game game_;
             private readonly AI ai_;
 
-            public StrategyForMax(int minScore, int maxScore, int depth, AIGame game_, AI ai_)
+            public StrategyForMax(int minScore, int maxScore, int depth, Game game_, AI ai_)
 				:base (minScore, maxScore, depth)
 			{
 				player_ = game_.getOpponent();
@@ -75,10 +75,10 @@ namespace neutreekoCSHARP
 
 		private class StrategyForMin : MinMaxStrategy
 		{
-            private readonly AIGame game_;
+            private readonly Game game_;
             private readonly AI ai_;
             public int nOpenings_ = 0;
-			public StrategyForMin(int minScore, int maxScore, int depth, AIGame game_, AI ai_)
+			public StrategyForMin(int minScore, int maxScore, int depth, Game game_, AI ai_)
 				:base(minScore, maxScore, depth)
 			{
 				player_ = game_.currentPlayer_;

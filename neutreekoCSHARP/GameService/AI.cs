@@ -5,8 +5,8 @@ namespace neutreekoCSHARP
 {
     public class AI
 	{
-		public AIGame game_;
-		public AI(AIGame game)
+		public Game game_;
+		public AI(Game game)
 		{
 			game_ = game;
 		}

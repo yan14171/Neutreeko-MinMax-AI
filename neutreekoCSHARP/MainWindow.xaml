@@ -53,11 +53,11 @@
         
         <StackPanel Grid.Row="0" Grid.Column="1">
             <Button Click="Button_Click">
-                Start game!
+                AI turn!
             </Button>
         </StackPanel>
 
-            <ItemsControl Name="Pawns"
+        <ItemsControl Name="Pawns"
                           Grid.Row="1"
                           Grid.Column="1">
                 

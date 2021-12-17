@@ -153,6 +153,68 @@ namespace neutreekoCSHARP
 				}
 			}
 		}
+
+		public void playUserMove(int i, int j, int direction)
+		{
+			while (true)
+			{
+				var isValidDirection = true;
+				if (direction >= 1 && direction <= 3)
+				{
+					direction += 4;
+				}
+				else if (direction == 4)
+				{
+					direction--;
+				}
+				else if (direction == 6)
+				{
+					direction -= 2;
+				}
+				else if (direction >= 7 && direction <= 9)
+				{
+					direction -= 7;
+				}
+				else
+				{
+					isValidDirection = false;
+				}
+				var position = new Coords((int)i, (int)j);
+
+				if (isValidDirection)
+				{
+					if (position.isOnBoard())
+					{
+						if (this.board_[i, j] == this.currentPlayer_)
+						{
+							var move = new Move(position, this.directions_[direction]);
+							if (this.boardOperations_.isValidMove(move))
+							{
+								this.move(move);
+								return;
+							}
+							else
+							{
+								Console.WriteLine("Direction invalid");
+							}
+						}
+						else
+						{
+							Console.WriteLine("No pawns available");
+						}
+					}
+					else
+					{
+						Console.WriteLine("Position invalid");
+					}
+				}
+				else
+				{
+					Console.WriteLine("Direction invalid");
+				}
+			}
+		}
+
 		public int getOpponent()
 		{
 			return (this.currentPlayer_ % 2) + 1;
